@@ -43,7 +43,6 @@ const ignores = tseslint.config({
     'src/analysis/retail/evoker/devastation/**',
     'src/analysis/retail/evoker/preservation/**',
     'src/analysis/retail/evoker/shared/**',
-    'src/analysis/retail/hunter/beastmastery/**',
     'src/analysis/retail/hunter/marksmanship/**',
     'src/analysis/retail/mage/arcane/**',
     'src/analysis/retail/mage/fire/**',

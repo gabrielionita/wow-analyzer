@@ -38,7 +38,7 @@ class SpellUsable extends CoreSpellUsable {
       Events.damage.by(SELECTED_PLAYER_PET).spell(SPELLS.KILL_COMMAND_SHARED_DAMAGE),
       this.onKillCommandDamage,
     );
-    this._has2pc = this.selectedCombatant.has2PieceByTier(TIERS.DF1);
+    this._has2pc = this.selectedCombatant.has2PieceByTier(TIERS.TWW3);
   }
 
   onAutoShotDamage(event: DamageEvent) {
@@ -66,7 +66,7 @@ class SpellUsable extends CoreSpellUsable {
     super.onCast(event);
   }
 
-  beginCooldown(triggerEvent: AbilityEvent<any>, _spellId: number) {
+  beginCooldown(triggerEvent: AbilityEvent<EventType>, _spellId: number) {
     if (triggerEvent.type === EventType.FreeCast) {
       //Ignore FreeCast events as they are events that have been modified or fabricated
       //They indicate that a different spell caused it to cast

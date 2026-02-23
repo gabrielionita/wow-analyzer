@@ -14,7 +14,9 @@ export default class FrenzyBuffStackTracker extends BuffStackTracker {
 
   constructor(options: Options) {
     super(options);
-    this.buffDuration = this.selectedCombatant.hasTalent(TALENTS_HUNTER.SAVAGERY_TALENT)
+    this.buffDuration = this.selectedCombatant.hasTalent(
+      TALENTS_HUNTER.SAVAGERY_BEAST_MASTERY_TALENT,
+    )
       ? SAVAGERY_FRENZY_DURATION
       : ORIGINAL_FRENZY_DURATION;
   }

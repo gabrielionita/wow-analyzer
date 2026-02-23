@@ -36,7 +36,6 @@ class BestialWrath extends Analyzer {
   constructor(options: Options) {
     super(options);
     this.active = this.selectedCombatant.hasTalent(TALENTS.BESTIAL_WRATH_TALENT);
-    this.hasBarbedWrath = this.selectedCombatant.hasTalent(TALENTS.BARBED_WRATH_TALENT);
     this.addEventListener(
       Events.cast.by(SELECTED_PLAYER).spell(TALENTS.BESTIAL_WRATH_TALENT),
       this.onBestialWrathCast,

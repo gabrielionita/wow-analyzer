@@ -2805,3 +2805,15 @@ export const Katorri: Contributor = {
     },
   ],
 };
+
+export const Jimache: Contributor = {
+  nickname: 'Jimache',
+  github: 'gabrielionita',
+  mains: [
+    {
+      name: 'Jimache',
+      spec: SPECS.BEAST_MASTERY_HUNTER,
+      link: 'https://www.warcraftlogs.com/character/eu/sylvanas/jimache',
+    },
+  ],
+};
